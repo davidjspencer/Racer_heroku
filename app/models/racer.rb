@@ -33,7 +33,7 @@ class Racer
 	end
 
 	def self.collection
-		self.mongo_client['racers']
+		self.mongo_client['raceday'] #changed to fit MongoLab collection name
 	end
 
 	def self.all(prototype={}, sort={:number=>1}, skip=0, limit=nil)
